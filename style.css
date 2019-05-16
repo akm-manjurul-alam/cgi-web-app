@@ -6,6 +6,7 @@ html {
 
 body {
     font-family: 'IBM Plex Mono', monospace;
+    color: white;
 }
 
 .main {
@@ -53,7 +54,7 @@ p {
 .container-login, .container-menue, .container-termin, .container-termin-liste {
     position: relative;
     max-width: 580px;
-    background: bisque;
+    background: dimgray;
     border: black 2px dotted;
     margin: 0 auto;
 }
@@ -96,7 +97,7 @@ button:hover {
 }
 
 .close-wrapper {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0px;
     right: 70px;
 }
@@ -111,5 +112,30 @@ button:hover {
 .close-icon:hover {
     fill: white;
     cursor: pointer;
+}
+
+.send-button {
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin-top: 20px;
+
+}
+
+.send-button:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-button, .delete-button {
+    width: 30px;
 }
 
