@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Terminverwaltung mit C</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
+</head>
+<body>
+<section class="main">
+    <div class="container-login">
+        <h1 class="title">Terminverwaltung - LOGIN</h1>
+        <div class="wrapper">
+            Username
+            <input class="name" placeholder="Username" required>
+            </br>
+            Passwort
+            <input class="password" placeholder="Kennwort" required>
+            </br>
+            <span class="forgot">*Username/Password forgotten</span>
+            </br>
+            <div class="login-button">
+                <a href="#" class="click">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-menue">
+        <h1 class="title">Terminverwaltung - MENUE</h1>
+        <div class="wrapper">
+            <p class="username"><< Sie sind angemeldet als: USERXY >></p>
+
+            <button class="new-termin">Neuer Termin</button>
+            </br>
+            </br>
+            <button class="new-termin">Terminliste</button>
+            </br>
+            </br>
+            <button class="new-termin">Passwort aendern</button>
+            </br>
+            </br>
+            <div class="close-wrapper">
+                <a class="close-button" href="#">
+                    <img class="logout" src="assets/icon_close2.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-termin-liste">
+        <h1 class="title">Terminverwaltung - Neuer Termin</h1>
+        <div class="wrapper">
+            <p class="username"><< Sie sind angemeldet als: USERXY >></p>
+
+            <div class="table">
+                <table class="list-table">
+                    <tr class="right">
+                        <th class="dates">A</th>
+                        <th class="types">B</th>
+                        <th class="edit">C</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="close-wrapper">
+                <a class="send-button" href="#">
+                    Senden
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-termin">
+        <h1 class="title">Terminverwaltung - Neuer Termin</h1>
+        <div class="wrapper">
+            <p class="username"><< Sie sind angemeldet als: USERXY >></p>
+
+            <div class="calender">
+
+            </div>
+
+            <div class="timetable">
+                <div class="time"></div>
+                <div class="detail"></div>
+            </div>
+
+            <div class="close-wrapper">
+                <a class="close-button" href="#">
+                    <img class="logout" src="assets/edit_icon.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
