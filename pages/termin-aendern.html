@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Terminverwaltung mit C</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
+</head>
+<body>
+<section class="main">
+    <div class="container-termin" id="aenderung">
+        <h1 class="title">Terminverwaltung - Neuer Termin</h1>
+        <div class="wrapper">
+            <p class="username"><< Sie sind angemeldet als: USERXY >></p>
+
+            <div class="calender">
+
+            </div>
+
+            <div class="timetable">
+                <div class="time">
+                    <form class="editing" action="/action_page.php">
+                        <div class="birthday">
+                            <p>
+                                <label>Birthday:</label>
+                                <input type="date" name="bday" class="bday">
+                            </p>
+                        </div>
+                        <div class="zeit-type">
+                            <p>
+                                <label>Uhrzeit:</label>
+                                <input type="time" name="zeit" class="zeit">
+                            </p>
+                            <p class="type-label">
+                                <label>Art:</label>
+                                <textarea rows="6" cols="20" name="aufgabe" class="aufgabe"></textarea>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="detail"></div>
+            </div>
+
+            <div class="close-wrapper">
+                <input class="send-button" type="submit">
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
