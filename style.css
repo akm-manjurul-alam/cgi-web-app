@@ -28,11 +28,6 @@ p {
 
 }
 
-ul {
-    display: flex;
-    justify-content: space-around;
-}
-
 .login-button {
     margin-top: 40px;
 }
@@ -63,6 +58,10 @@ ul {
     margin: 0 auto;
 }
 
+.wrapper {
+    margin-top: 40px;
+}
+
 .container-login {
 }
 
@@ -78,6 +77,10 @@ ul {
     border-radius: 20px;
 }
 
+.new-termin {
+}
+
+
 .container-termin-liste {
     margin-top: 60px;
     padding: 40px;
@@ -92,8 +95,16 @@ ul {
 .row {
 }
 
-.left, .middle, .right {
+.left, .middle {
     text-align: left;
+}
+
+.list-edit {
+    margin-right: 15px;
+}
+
+.list-delete {
+
 }
 
 .container-termin {
@@ -104,6 +115,7 @@ ul {
 
 .editing {
     display: flex;
+    font-family: 'IBM Plex Mono', monospace;
     justify-content: space-evenly;
     margin: 50px 20px;
 }
@@ -115,14 +127,22 @@ ul {
     text-align: left;
 }
 
+.geburtstag, .uhrzeit {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
 .bday {
     height: 40px;
+    padding-left: 20px;
 }
 
 .zeit {
     width: 158px;
     height: 40px;
     margin-bottom: 10px;
+    padding-left: 20px;
 }
 
 .aufgabe {
@@ -133,7 +153,7 @@ ul {
     display: flex;
 }
 
-p{
+p {
     justify-content: center;
 }
 
@@ -161,10 +181,6 @@ button:hover {
 }
 
 .close-button {
-}
-
-.logout {
-    height: 70px;
 }
 
 .close-icon:hover {
@@ -198,12 +214,36 @@ button:hover {
 }
 
 
-
 /* Login page styling */
 
 
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
+/*//////////////////////////////////////////////////////////////////*/
+
+/* Menu page styling */
+.username {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.logout {
+    fill: limegreen;
+    filter: brightness(0.5) sepia(1) hue-rotate(60deg) saturate(10);
+    height: 50px;
+    width: 50px;
+}
+
+.logout:hover {
+    fill: red;
+    filter: brightness(0.5) sepia(2) hue-rotate(340deg) saturate(10);
+}
+
+.close-wrapper {
+    margin-top: 40px;
+}
+
+/*//////////////////////////////////////////////////////////////////*/
 
 * {
     margin: 0px;
@@ -234,21 +274,15 @@ a:hover {
 }
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
 
 p {
-    font-family: OpenSans-Regular;
     font-size: 14px;
     line-height: 1.7;
-    color: #666666;
+    color: white;
     margin: 0px;
-}
-
-ul, li {
-    margin: 0px;
-    list-style-type: none;
 }
 
 
@@ -267,25 +301,69 @@ textarea:focus, input:focus {
     border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder {
+    color: transparent;
+}
 
-input::-webkit-input-placeholder { color: #999999;}
-input:-moz-placeholder { color: #999999;}
-input::-moz-placeholder { color: #999999;}
-input:-ms-input-placeholder { color: #999999;}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
 
-textarea::-webkit-input-placeholder { color: #999999;}
-textarea:-moz-placeholder { color: #999999;}
-textarea::-moz-placeholder { color: #999999;}
-textarea:-ms-input-placeholder { color: #999999;}
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+input::-webkit-input-placeholder {
+    color: #999999;
+}
+
+input:-moz-placeholder {
+    color: #999999;
+}
+
+input::-moz-placeholder {
+    color: #999999;
+}
+
+input:-ms-input-placeholder {
+    color: #999999;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #999999;
+}
+
+textarea:-moz-placeholder {
+    color: #999999;
+}
+
+textarea::-moz-placeholder {
+    color: #999999;
+}
+
+textarea:-ms-input-placeholder {
+    color: #999999;
+}
 
 
 label {
@@ -296,7 +374,6 @@ label {
 /*---------------------------------------------*/
 button {
     outline: none !important;
-    border: none;
     background: transparent;
 }
 
@@ -313,18 +390,27 @@ iframe {
 
 /*==================================================================
 [ Text ]*/
+.text-center {
+    width: 100%;
+    margin-top: 10px;
+    text-align: right;
+}
+
 .txt1 {
-    font-family: OpenSans-Regular;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 13px;
     line-height: 1.4;
     color: #cccccc;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 10px;
 }
-
 
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
 .limiter {
+    font-family: 'IBM Plex Mono', monospace;
     width: 100%;
     margin: 0 auto;
 }
@@ -370,16 +456,15 @@ iframe {
 }
 
 .login100-form-title {
+    margin-bottom: 40px;
     width: 100%;
     display: block;
-    font-family: OpenSans-Regular;
     font-size: 30px;
     color: #fefefe;
     line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
 }
-
 
 
 /*------------------------------------------------------------------
@@ -411,7 +496,6 @@ iframe {
 }
 
 .label-input100 {
-    font-family: OpenSans-Bold;
     font-size: 15px;
     color: #555555;
     line-height: 1.2;
@@ -431,7 +515,6 @@ iframe {
 }
 
 .input100 {
-    font-family: OpenSans-Bold;
     font-size: 15px;
     color: #555555;
     line-height: 1.2;
@@ -461,6 +544,14 @@ input.input100 {
     color: #111111;
 }
 
+.input-left {
+    border-top-left-radius: 12px;
+}
+
+.input-right {
+    border-top-right-radius: 12px;
+}
+
 .has-val {
     height: 55px !important;
 }
@@ -470,7 +561,6 @@ input.input100 {
     font-size: 13px;
     color: #111111;
 }
-
 
 
 /*------------------------------------------------------------------
@@ -487,7 +577,6 @@ input.input100 {
 }
 
 .login100-form-btn {
-    font-family: OpenSans-Bold;
     font-size: 15px;
     color: #fff;
     line-height: 1.2;
@@ -540,10 +629,10 @@ input.input100 {
 .login100-form-btn:hover {
     background-color: transparent;
 }
+
 .login100-form-btn:hover:before {
     opacity: 1;
 }
-
 
 
 /*------------------------------------------------------------------
@@ -574,8 +663,6 @@ input.input100 {
     transform: translateY(-50%);
     right: 12px;
     pointer-events: none;
-
-    font-family: OpenSans-Bold;
     color: #c80000;
     font-size: 13px;
     line-height: 1.4;
@@ -620,7 +707,6 @@ input.input100 {
 }
 
 
-
 /*//////////////////////////////////////////////////////////////////
 [ Responsive ]*/
 @media (max-width: 576px) {
@@ -637,13 +723,67 @@ input.input100 {
         border-top-right-radius: 0px;
     }
 }
-/* Login page styling */
+
+/* navigation styling */
+.terakutta {
+    position: fixed;
+}
 
 
-/* Menue page styling */
+.navigation {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
 
-/* Menue page styling */
+.nav-ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
 
+.nav-ul-li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-ul-li a {
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s;
+    padding: 8px;
+}
+
+.nav-ul-li a:hover {
+    background-color: white;
+    color: #000;
+}
+
+.nav-ul-id {
+    position: relative;
+    width: 50%;
+}
+
+.nav-ul-li-id {
+    position: absolute;
+    list-style: none;
+    right: 40px;
+    top: -19px;
+}
+
+.admin-logged {
+
+}
+
+#scope .post_meta{display:none;}
+#scope li:hover{cursor:pointer;}
 
 /* Termin page styling */
 

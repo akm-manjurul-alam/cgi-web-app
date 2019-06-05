@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
 </head>
 <body>
+
+<nav>
+    <ul class="nav-ul">
+        <li class="nav-ul-li"><a href="../pages/login.html">Login</a></li>
+        <li class="nav-ul-li"><a href="../pages/menue.html">Menue</a></li>
+        <li class="nav-ul-li"><a href="../pages/neuer-termin.html">Neuer Termin</a></li>
+        <li class="nav-ul-li"><a href="../pages/termin-aendern.html">Termin Bearbeiten</a></li>
+    </ul>
+</nav>
+
 <section class="main">
     <div class="container-termin" id="aenderung">
         <h1 class="title">Terminverwaltung - Neuer Termin</h1>
@@ -21,13 +31,13 @@
                 <div class="time">
                     <form class="editing" action="/action_page.php">
                         <div class="birthday">
-                            <p>
+                            <p class="geburtstag">
                                 <label>Birthday:</label>
                                 <input type="date" name="bday" class="bday">
                             </p>
                         </div>
                         <div class="zeit-type">
-                            <p>
+                            <p class="uhrzeit">
                                 <label>Uhrzeit:</label>
                                 <input type="time" name="zeit" class="zeit">
                             </p>

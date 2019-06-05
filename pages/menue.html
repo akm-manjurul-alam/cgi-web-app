@@ -5,8 +5,35 @@
     <title>Terminverwaltung mit C</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 </head>
 <body>
+
+<script>
+    $(document).ready(function(){
+        $("#scope .image").hover(function() {
+            $('.post_meta').show();
+        },function(){
+            $('.post_meta').hide();
+        });
+    });
+</script>
+
+<nav class="navigation">
+    <ul class="nav-ul">
+        <li class="nav-ul-li"><a href="../pages/login.html">Login</a></li>
+        <li class="nav-ul-li"><a href="../pages/menue.html">Menue</a></li>
+        <li class="nav-ul-li"><a href="../pages/neuer-termin.html">Neuer Termin</a></li>
+        <li class="nav-ul-li"><a href="../pages/termin-aendern.html">Termin Bearbeiten</a></li>
+    </ul>
+    <ul class="nav-ul-id" id="scope">
+        <li class="nav-ul-li-id image">
+            <span class="admin-logged-info post_meta"><< Sie sind angemeldet als: USERXY >></span>
+            <img src="../assets/admin.svg" height="40px">
+        </li>
+    </ul>
+</nav>
+
 <section class="main">
     <div class="container-menue" id="menue">
         <h1 class="title">Terminverwaltung - MENUE</h1>
@@ -24,7 +51,20 @@
             </br>
             <div class="close-wrapper">
                 <a class="close-button" href="#">
-                    <img class="logout" src="../assets/icon_close2.png">
+                    <svg version="1.1" class="logout" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="485.215px" height="485.215px" viewBox="0 0 485.215 485.215"
+                         style="enable-background:new 0 0 485.215 485.215;"
+                         xml:space="preserve">
+                        <g>
+	                        <path d="M242.606,0.001C108.598,0.001,0,108.63,0,242.607c0,133.976,108.598,242.606,242.606,242.606
+		                            c133.978,0,242.608-108.631,242.608-242.606C485.215,108.63,376.584,0.001,242.606,0.001z M257.77,212.283h-30.327V90.979h30.327
+		                            V212.283z M363.908,242.607c0,66.934-54.404,121.3-121.302,121.3c-66.9,0-121.305-54.366-121.305-121.3
+		                            c0-50.698,31.512-93.643,75.814-111.708v33.528c-27.095,15.753-45.488,44.657-45.488,78.18c0,50.169,40.811,90.979,90.978,90.979
+		                            c50.171,0,90.976-40.81,90.976-90.979c0-33.465-18.422-62.427-45.486-78.18v-33.528C332.4,148.965,363.908,191.909,363.908,242.607
+		                    z"/>
+                        </g>
+                    </svg>
                 </a>
             </div>
         </div>
