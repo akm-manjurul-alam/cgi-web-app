@@ -3,11 +3,12 @@
 <html>
 <head>
     <title>Terminverwaltung mit C</title>
+    <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
 </head>
 <body>
-<nav class="terakutta">
+<nav class="navigation terakutta">
     <ul class="nav-ul">
         <li class="nav-ul-li"><a href="../pages/login.html">Login</a></li>
         <li class="nav-ul-li"><a href="../pages/menue.html">Menue</a></li>
@@ -20,31 +21,31 @@
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100 p-b-160 p-t-50">
-                <form class="login100-form validate-form">
+                <form class="login100-form validate-form" action="#">
 					<span class="login100-form-title p-b-43">
 						Account Login
 					</span>
 
-                    <div class="wrap-input100 rs1 validate-input" data-validate = "Username is required">
-                        <input class="input100 input-left" type="text" name="username">
+                    <div class="wrap-input100 rs1 validate-input" data-validate="Username is required">
+                        <input class="input100 input-left" type="text" name="username" size="25">
                         <span class="label-input100">Username</span>
                     </div>
 
 
                     <div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
-                        <input class="input100 input-right" type="password" name="pass">
+                        <input class="input100 input-right" type="password" name="kennwort" size="25">
                         <span class="label-input100">Password</span>
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                            Sign in
+                        <button class="login100-form-btn" title="Einloggen" name="SUBMIT" type="submit" value="submit">
+                            Einloggen
                         </button>
                     </div>
 
                     <div class="text-center w-full p-t-23">
                         <a href="#" class="txt1">
-                            * Forgot password?
+                            * Kennwort Vergessen?
                         </a>
                     </div>
                 </form>
@@ -52,5 +53,15 @@
         </div>
     </div>
 </section>
+
+
+<footer class="footer">
+    <p>
+        Juni-2019@copyrightmaschineistkaputt
+        < <strong class="editors">Firas</strong> >
+        < <strong class="editors">Mischu</strong> >
+        < <strong class="editors">Lamine</strong> >
+    </p>
+</footer>
 </body>
 </html>

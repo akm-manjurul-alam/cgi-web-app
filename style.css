@@ -12,6 +12,7 @@ html {
 
 body {
     font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 2px;
     color: white;
 }
 
@@ -77,7 +78,17 @@ p {
     border-radius: 20px;
 }
 
+.wrapper-menu {
+    width: 100%;
+    max-width: 400px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
 .new-termin {
+    margin-bottom: 30px;
 }
 
 
@@ -97,10 +108,12 @@ p {
 
 .left, .middle {
     text-align: left;
+    line-height: 60px;
 }
 
 .list-edit {
     margin-right: 15px;
+    text-decoration: none;
 }
 
 .list-delete {
@@ -114,47 +127,49 @@ p {
 }
 
 .editing {
-    display: flex;
     font-family: 'IBM Plex Mono', monospace;
-    justify-content: space-evenly;
-    margin: 50px 20px;
 }
 
-.birthday {
+.time-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 450px;
 }
 
-.zeit-type {
-    text-align: left;
-}
-
-.geburtstag, .uhrzeit {
-    color: white;
+.geburtstag, .uhrzeit, .type-label {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.lefty {
+    width: 40%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.righty {
+    width: 60%;
+    text-align: center;
 }
 
 .bday {
     height: 40px;
-    padding-left: 20px;
 }
 
 .zeit {
-    width: 158px;
     height: 40px;
-    margin-bottom: 10px;
-    padding-left: 20px;
 }
 
 .aufgabe {
-    margin-left: 48px;
+    resize: none;
+    text-align: left;
+    padding: 5px;
 }
 
-.type-label {
-    display: flex;
-}
 
 p {
-    justify-content: center;
 }
 
 button {
@@ -174,13 +189,14 @@ button:hover {
     cursor: pointer;
 }
 
-.close-wrapper {
-    /*position: absolute;*/
-    bottom: 0px;
-    right: 70px;
-}
+/*.close-wrapper {*/
+/*    !*position: absolute;*!*/
+/*    bottom: 0px;*/
+/*    right: 70px;*/
+/*}*/
 
 .close-button {
+
 }
 
 .close-icon:hover {
@@ -209,6 +225,11 @@ button:hover {
     cursor: pointer;
 }
 
+.send-button:focus {
+    border-top-color: white;
+    transition: border-top-color .3s;
+}
+
 .edit-button, .delete-button {
     width: 30px;
 }
@@ -220,18 +241,12 @@ button:hover {
 /*//////////////////////////////////////////////////////////////////*/
 
 /* Menu page styling */
-.username {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 40px;
-}
-
 .logout {
     fill: limegreen;
     filter: brightness(0.5) sepia(1) hue-rotate(60deg) saturate(10);
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
 }
 
 .logout:hover {
@@ -239,9 +254,9 @@ button:hover {
     filter: brightness(0.5) sepia(2) hue-rotate(340deg) saturate(10);
 }
 
-.close-wrapper {
-    margin-top: 40px;
-}
+/*.close-wrapper {*/
+/*    margin-top: 40px;*/
+/*}*/
 
 /*//////////////////////////////////////////////////////////////////*/
 
@@ -614,11 +629,7 @@ input.input100 {
     height: 100%;
     opacity: 0;
 
-    background: #2575fc;
-    background: -webkit-linear-gradient(right, #6a11cb, #2575fc);
-    background: -o-linear-gradient(right, #6a11cb, #2575fc);
-    background: -moz-linear-gradient(right, #6a11cb, #2575fc);
-    background: linear-gradient(right, #6a11cb, #2575fc);
+    background: -webkit-linear-gradient(left, #2575fc, #6a11cb);
 
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -627,7 +638,6 @@ input.input100 {
 }
 
 .login100-form-btn:hover {
-    background-color: transparent;
 }
 
 .login100-form-btn:hover:before {
@@ -737,7 +747,8 @@ input.input100 {
     z-index: 1;
     width: 100%;
     height: 60px;
-    text-align: center;
+    text-align: center;-webkit-box-shadow: 0px 15px 28px -7px rgba(96,33,211,0.5);
+    box-shadow: 0px 15px 28px -7px rgba(96,33,211,0.5);
 }
 
 .nav-ul {
@@ -772,18 +783,46 @@ input.input100 {
 }
 
 .nav-ul-li-id {
-    position: absolute;
+    position: relative;
     list-style: none;
-    right: 40px;
-    top: -19px;
+    padding-right: 50px;
+}
+
+.nav-ul-li-id .admin-image title {
+    color: firebrick;
 }
 
 .admin-logged {
 
 }
 
-#scope .post_meta{display:none;}
-#scope li:hover{cursor:pointer;}
+.image {
+}
+
+
+#scope .post_meta {
+    position: absolute;
+    top: 10px;
+}
+
+#scope li:hover {
+    cursor: pointer;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    margin-top: -40px;
+}
+
+.footer-text {
+
+}
+
+.editors {
+}
 
 /* Termin page styling */
 

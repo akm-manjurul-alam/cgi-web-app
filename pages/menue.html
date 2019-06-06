@@ -2,22 +2,14 @@
 
 <html>
 <head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
     <title>Terminverwaltung mit C</title>
+    <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 </head>
 <body>
-
-<script>
-    $(document).ready(function(){
-        $("#scope .image").hover(function() {
-            $('.post_meta').show();
-        },function(){
-            $('.post_meta').hide();
-        });
-    });
-</script>
 
 <nav class="navigation">
     <ul class="nav-ul">
@@ -28,34 +20,17 @@
     </ul>
     <ul class="nav-ul-id" id="scope">
         <li class="nav-ul-li-id image">
-            <span class="admin-logged-info post_meta"><< Sie sind angemeldet als: USERXY >></span>
-            <img src="../assets/admin.svg" height="40px">
+            <img title="Sie sind Angemeldet" class="admin-image" src="../assets/admin.svg" height="40px">
+            <span class="admin-logged-info post_meta">Master</span>
         </li>
     </ul>
-</nav>
 
-<section class="main">
-    <div class="container-menue" id="menue">
-        <h1 class="title">Terminverwaltung - MENUE</h1>
-        <div class="wrapper">
-            <p class="username"><< Sie sind angemeldet als: USERXY >></p>
-
-            <button class="new-termin">Neuer Termin</button>
-            </br>
-            </br>
-            <button class="new-termin">Terminliste</button>
-            </br>
-            </br>
-            <button class="new-termin">Passwort aendern</button>
-            </br>
-            </br>
-            <div class="close-wrapper">
-                <a class="close-button" href="#">
-                    <svg version="1.1" class="logout" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         width="485.215px" height="485.215px" viewBox="0 0 485.215 485.215"
-                         style="enable-background:new 0 0 485.215 485.215;"
-                         xml:space="preserve">
+    <a class="close-button" href="#" title="Ausloggen">
+        <svg version="1.1" class="logout" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="485.215px" height="485.215px" viewBox="0 0 485.215 485.215"
+             style="enable-background:new 0 0 485.215 485.215;"
+             xml:space="preserve">
                         <g>
 	                        <path d="M242.606,0.001C108.598,0.001,0,108.63,0,242.607c0,133.976,108.598,242.606,242.606,242.606
 		                            c133.978,0,242.608-108.631,242.608-242.606C485.215,108.63,376.584,0.001,242.606,0.001z M257.77,212.283h-30.327V90.979h30.327
@@ -65,10 +40,29 @@
 		                    z"/>
                         </g>
                     </svg>
-                </a>
-            </div>
+    </a>
+
+</nav>
+
+<section class="main">
+    <div class="container-menue" id="menue">
+        <h1 class="title">Terminverwaltung - MENUE</h1>
+        <div class="wrapper-menu">
+            <button class="new-termin" title="Neuer Termin">Neuer Termin</button>
+            <button class="new-termin">Terminliste</button>
+            <button class="new-termin">Passwort Ändern</button>
         </div>
     </div>
 </section>
+
+
+<footer class="footer">
+    <p>
+        Juni-2019@copyrightmaschineistkaputt
+        < <strong class="editors">Firas</strong> >
+        < <strong class="editors">Mischu</strong> >
+        < <strong class="editors">Lamine</strong> >
+    </p>
+</footer>
 </body>
 </html>
