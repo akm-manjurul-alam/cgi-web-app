@@ -29,14 +29,20 @@ p {
 
 }
 
+.title {
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
 .login-button {
     margin-top: 40px;
 }
 
 .click {
     background: transparent;
-    color: black;
-    border: 2px solid black;
+    color: white;
+    border: 2px solid white;
     border-radius: 8px;
     width: 200px;
     height: 40px;
@@ -64,6 +70,7 @@ p {
 }
 
 .container-login {
+
 }
 
 .login {
@@ -74,7 +81,6 @@ p {
 
 .container-menue {
     margin-top: 60px;
-    padding: 40px;
     border-radius: 20px;
 }
 
@@ -93,8 +99,6 @@ p {
 
 
 .container-termin-liste {
-    margin-top: 60px;
-    padding: 40px;
     border-radius: 20px;
 }
 
@@ -104,6 +108,10 @@ p {
 }
 
 .row {
+}
+
+.title-222 {
+    color: #000;
 }
 
 .left, .middle {
@@ -122,7 +130,6 @@ p {
 
 .container-termin {
     margin-top: 60px;
-    padding: 40px;
     border-radius: 20px;
 }
 
@@ -173,30 +180,30 @@ p {
 }
 
 button {
-    background: transparent;
-    color: black;
-    border: 2px solid black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    background: #6A14CD;
+    color: white;
+    border: 2px solid #3a5dff;
     border-radius: 8px;
-    width: 200px;
-    height: 40px;
+    width: 280px;
+    height: 45px;
     outline: none;
     font-weight: 700;
+    transition: ease all .3s;
 }
 
 button:hover {
-    background: black;
     color: white;
     cursor: pointer;
+    -webkit-box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 0.5);
+    box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 1);
 }
 
-/*.close-wrapper {*/
-/*    !*position: absolute;*!*/
-/*    bottom: 0px;*/
-/*    right: 70px;*/
-/*}*/
-
 .close-button {
-
+    position: absolute;
+    right: 0;
+    top: 15px;
 }
 
 .close-icon:hover {
@@ -205,24 +212,29 @@ button:hover {
 }
 
 .send-button {
-    background: transparent;
-    color: black;
-    border: 2px solid black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    background: #6A14CD;
+    color: white;
+    border: 2px solid #3a5dff;
     border-radius: 8px;
-    width: 200px;
-    height: 40px;
+    width: 280px;
+    height: 45px;
     outline: none;
     font-weight: 700;
+    transition: ease all .3s;
     text-decoration: none;
     padding: 5px 30px;
-    margin-top: 20px;
-
+    max-width: 380px;
+    margin-left: 78px;
 }
 
 .send-button:hover {
-    background: black;
+    background: #6A14CD;
     color: white;
     cursor: pointer;
+    -webkit-box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 0.5);
+    box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 1);
 }
 
 .send-button:focus {
@@ -242,21 +254,15 @@ button:hover {
 
 /* Menu page styling */
 .logout {
-    fill: limegreen;
-    filter: brightness(0.5) sepia(1) hue-rotate(60deg) saturate(10);
-    height: 40px;
-    width: 40px;
+    fill: white;
+    height: 30px;
+    width: 30px;
     margin-right: 15px;
 }
 
 .logout:hover {
     fill: red;
-    filter: brightness(0.5) sepia(2) hue-rotate(340deg) saturate(10);
 }
-
-/*.close-wrapper {*/
-/*    margin-top: 40px;*/
-/*}*/
 
 /*//////////////////////////////////////////////////////////////////*/
 
@@ -387,14 +393,6 @@ label {
 }
 
 /*---------------------------------------------*/
-button {
-    outline: none !important;
-    background: transparent;
-}
-
-button:hover {
-    cursor: pointer;
-}
 
 iframe {
     border: none !important;
@@ -431,8 +429,8 @@ iframe {
 }
 
 .container-login100 {
+    position: relative;
     width: 100%;
-    min-height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -443,16 +441,12 @@ iframe {
     align-items: center;
     padding: 15px;
 
-    background: #2575fc;
-    background: -webkit-linear-gradient(left, #6a11cb, #2575fc);
-    background: -o-linear-gradient(left, #6a11cb, #2575fc);
-    background: -moz-linear-gradient(left, #6a11cb, #2575fc);
-    background: linear-gradient(left, #6a11cb, #2575fc);
-
 }
 
 .wrap-login100 {
     width: 560px;
+    position: absolute;
+    top: 240px;
 }
 
 
@@ -474,7 +468,7 @@ iframe {
     margin-bottom: 40px;
     width: 100%;
     display: block;
-    font-size: 30px;
+    font-size: 40px;
     color: #fefefe;
     line-height: 1.2;
     text-transform: uppercase;
@@ -513,13 +507,11 @@ iframe {
 .label-input100 {
     font-size: 15px;
     color: #555555;
-    line-height: 1.2;
 
     display: block;
     position: absolute;
     pointer-events: none;
     width: 100%;
-    padding-left: 30px;
     left: 0;
     top: 28px;
 
@@ -592,7 +584,8 @@ input.input100 {
 }
 
 .login100-form-btn {
-    font-size: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
     color: #fff;
     line-height: 1.2;
     text-transform: uppercase;
@@ -610,6 +603,8 @@ input.input100 {
     border-bottom-right-radius: 12px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    border-top: 1px;
+    border-top-color: transparent;
     overflow: hidden;
     background: #111111;
     -webkit-transition: all 0.4s;
@@ -736,7 +731,7 @@ input.input100 {
 
 /* navigation styling */
 .terakutta {
-    position: fixed;
+    /*position: fixed;*/
 }
 
 
@@ -747,8 +742,9 @@ input.input100 {
     z-index: 1;
     width: 100%;
     height: 60px;
-    text-align: center;-webkit-box-shadow: 0px 15px 28px -7px rgba(96,33,211,0.5);
-    box-shadow: 0px 15px 28px -7px rgba(96,33,211,0.5);
+    text-align: center;
+    -webkit-box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 0.5);
+    box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 0.5);
 }
 
 .nav-ul {
