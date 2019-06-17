@@ -97,6 +97,29 @@ p {
     margin-bottom: 30px;
 }
 
+.new-termin {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    background: #6A14CD;
+    color: white;
+    line-height: 2;
+    border: 2px solid #3a5dff;
+    border-radius: 8px;
+    width: 280px;
+    height: 45px;
+    text-decoration: none;
+    outline: none;
+    font-weight: 700;
+    transition: ease all .3s;
+}
+
+.new-termin:hover {
+    color: white;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 0.5);
+    box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 1);
+}
+
 
 .container-termin-liste {
     border-radius: 20px;
@@ -731,9 +754,8 @@ input.input100 {
 
 /* navigation styling */
 .terakutta {
-    /*position: fixed;*/
+    display: none !important;
 }
-
 
 .navigation {
     display: flex;
@@ -821,10 +843,99 @@ input.input100 {
 }
 
 /* Termin page styling */
+.tg {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 850px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #9ABAD9;
 
+    -webkit-box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 0.5);
+    box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 0.5);
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    border-top-width: 1px;
+    border-color: #9ABAD9;
+    color: #444;
+    background-color: #EBF5FF;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 20px 20px;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-color: #9ABAD9;
+    color: #fff;
+    background-color: #409cff;
+}
+
+.tg .tg-jfpe {
+    background: #a0c3f3;
+    font-size: 16px;
+    color: #ffffff;
+    border-color: inherit;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tg .tg-29iv {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    border-color: inherit;
+    text-align: left
+}
+
+.bearbeiten {
+    text-align: center !important;
+}
+
+.tg .tg-xi6a {
+    background-color: #e3eaf5;
+    font-size: 16px;
+    color: #ffffff;
+    border-color: inherit;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tg .tg-jjow {
+    background: #a0c3f3;
+    font-size: 16px;
+    color: black;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tg .tg-fr00 {
+    background-color: #e3eaf5;
+    font-size: 16px;
+    color: black;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: middle;
+}
 /* Termin page styling */
 
 
 /* Bearbeiten page styling */
 
 /* Bearbeiten page styling */
+
+

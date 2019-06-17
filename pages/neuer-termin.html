@@ -7,110 +7,52 @@
     <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script>
+        urlp = [];
+        u = location.search.replace("?", "").split("&").forEach(function (d) {
+            e = d.split("=");
+            urlp[e[0]] = e[1];
+        })
+    </script>
 </head>
 <body>
-<nav class="navigation terakutta">
+<nav class="navigation">
     <ul class="nav-ul">
-        <li class="nav-ul-li"><a href="../pages/login.html">Login</a></li>
         <li class="nav-ul-li"><a href="../pages/menue.html">Menue</a></li>
         <li class="nav-ul-li"><a href="../pages/neuer-termin.html">Neuer Termin</a></li>
         <li class="nav-ul-li"><a href="../pages/termin-aendern.html">Termin Bearbeiten</a></li>
     </ul>
+    <ul class="nav-ul-id" id="scope">
+        <li class="nav-ul-li-id image">
+            <img title="Sie sind Angemeldet" class="admin-image" src="../assets/admin.svg" height="40px">
+            <span class="admin-logged-info post_meta" id="logged-in-user">
+                <script>document.write(urlp["user"]);</script>
+            </span>
+        </li>
+    </ul>
+
+    <a class="close-button" href="../" title="Ausloggen">
+        <svg version="1.1" class="logout" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="485.215px" height="485.215px" viewBox="0 0 485.215 485.215"
+             style="enable-background:new 0 0 485.215 485.215;"
+             xml:space="preserve">
+             <g>
+	            <path d="M242.606,0.001C108.598,0.001,0,108.63,0,242.607c0,133.976,108.598,242.606,242.606,242.606
+		            c133.978,0,242.608-108.631,242.608-242.606C485.215,108.63,376.584,0.001,242.606,0.001z M257.77,212.283h-30.327V90.979h30.327
+		            V212.283z M363.908,242.607c0,66.934-54.404,121.3-121.302,121.3c-66.9,0-121.305-54.366-121.305-121.3
+		            c0-50.698,31.512-93.643,75.814-111.708v33.528c-27.095,15.753-45.488,44.657-45.488,78.18c0,50.169,40.811,90.979,90.978,90.979
+		            c50.171,0,90.976-40.81,90.976-90.979c0-33.465-18.422-62.427-45.486-78.18v-33.528C332.4,148.965,363.908,191.909,363.908,242.607
+		            z"
+                />
+             </g>
+        </svg>
+    </a>
+
 </nav>
 
 <section class="main">
-    <style type="text/css">
-        .tg {
-            margin: 0 auto;
-            width: 100%;
-            max-width: 850px;
-            border-collapse: collapse;
-            border-spacing: 0;
-            border-color: #9ABAD9;
-
-            -webkit-box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 0.5);
-            box-shadow: 0px 15px 28px -7px rgba(96, 33, 211, 0.5);
-        }
-
-        .tg td {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            padding: 10px 20px;
-            border-style: solid;
-            border-width: 0px;
-            overflow: hidden;
-            word-break: normal;
-            border-top-width: 1px;
-            border-color: #9ABAD9;
-            color: #444;
-            background-color: #EBF5FF;
-        }
-
-        .tg th {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            font-weight: normal;
-            padding: 20px 20px;
-            border-width: 0px;
-            overflow: hidden;
-            word-break: normal;
-            border-top-width: 1px;
-            border-bottom-width: 1px;
-            border-color: #9ABAD9;
-            color: #fff;
-            background-color: #409cff;
-        }
-
-        .tg .tg-jfpe {
-            background: #a0c3f3;
-            font-size: 16px;
-            color: #ffffff;
-            border-color: inherit;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .tg .tg-29iv {
-            font-size: 16px;
-            color: #ffffff;
-            font-weight: bold;
-            border-color: inherit;
-            text-align: left
-        }
-
-        .bearbeiten {
-            text-align: center !important;
-        }
-
-        .tg .tg-xi6a {
-            background-color: #e3eaf5;
-            font-size: 16px;
-            color: #ffffff;
-            border-color: inherit;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .tg .tg-jjow {
-            background: #a0c3f3;
-            font-size: 16px;
-            color: black;
-            border-color: inherit;
-            text-align: left;
-            vertical-align: middle;
-        }
-
-        .tg .tg-fr00 {
-            background-color: #e3eaf5;
-            font-size: 16px;
-            color: black;
-            border-color: inherit;
-            text-align: left;
-            vertical-align: middle;
-        }
-    </style>
-
-
     <div class="container-termin-liste" id="main">
         <h1 class="title">Terminverwaltung - Neuer Termin</h1>
         <table class="tg">

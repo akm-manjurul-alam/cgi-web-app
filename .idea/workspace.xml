@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62cda984-5496-4317-a7cd-d6393349c789" name="Default Changelist" comment="styling changes and javascript added phase 2">
-      <change afterPath="$PROJECT_DIR$/assets/delete_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/edit_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/reset-password.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cgi-bin/cgi.cgi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cgi-bin/cgi.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cgi-bin/cgi1.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cgi-bin/test-coding/codes-c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cgi-bin/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/reset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/reset-password.html" afterDir="false" />
+    <list default="true" id="62cda984-5496-4317-a7cd-d6393349c789" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/kitchensink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgi-bin/Termine.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgi-bin/cgi-login.cgi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgi-bin/termin-liste.cgi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/getqueryparameters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/admin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/admin.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/delete_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/edit_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon_close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon_close2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon_close3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon_close4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/shut-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shut-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi-bin/cgi.cgi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi-bin/cgi.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi-bin/cgi1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi-bin/temp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi-bin/test-coding/codes-c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgi-bin/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cgi-bin/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/menue.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/menue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/neuer-termin.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/neuer-termin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/reset-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/reset-password.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/termin-aendern.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/termin-aendern.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -40,23 +36,14 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46893668">
+    <splitter split-orientation="horizontal" split-proportion="0.5847356">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pages/login.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+                <state relative-caret-position="816">
+                  <caret line="48" selection-start-line="48" selection-end-line="48" />
                 </state>
               </provider>
             </entry>
@@ -70,14 +57,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/menue.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="4" selection-end-column="71" />
+                <state relative-caret-position="459">
+                  <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
                   <folding>
-                    <element signature="n#style#0;n#svg#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#svg#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/getqueryparameters.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
                 </state>
               </provider>
             </entry>
@@ -85,8 +81,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/neuer-termin.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+                <state relative-caret-position="374">
+                  <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="30" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -94,8 +90,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/termin-aendern.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+                <state relative-caret-position="510">
+                  <caret line="30" column="62" lean-forward="true" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
                 </state>
               </provider>
             </entry>
@@ -104,16 +100,16 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="13515">
-                  <caret line="795" column="1" selection-start-line="795" selection-start-column="1" selection-end-line="795" selection-end-column="1" />
+                <state relative-caret-position="440">
+                  <caret line="103" column="17" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/reset-password.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="595">
@@ -126,9 +122,9 @@
             <entry file="file://$PROJECT_DIR$/pages/menue.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="391">
-                  <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+                  <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
                   <folding>
-                    <element signature="n#style#0;n#svg#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#svg#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
                 </state>
               </provider>
@@ -169,25 +165,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/assets/icon_close.svg" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/menu-tabelle.html" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/options.js" />
         <option value="$PROJECT_DIR$/pages/password-forgot.html" />
         <option value="$PROJECT_DIR$/pages/email-varification.html" />
-        <option value="$PROJECT_DIR$/pages/menue.html" />
-        <option value="$PROJECT_DIR$/pages/neuer-termin.html" />
-        <option value="$PROJECT_DIR$/pages/termin-aendern.html" />
         <option value="$PROJECT_DIR$/assets/reset-password.css" />
-        <option value="$PROJECT_DIR$/js/reset.js" />
         <option value="$PROJECT_DIR$/pages/reset-password.html" />
         <option value="$PROJECT_DIR$/pages/login.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/js/reset.js" />
+        <option value="$PROJECT_DIR$/pages/neuer-termin.html" />
+        <option value="$PROJECT_DIR$/pages/termin-aendern.html" />
+        <option value="$PROJECT_DIR$/pages/menue.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-224" />
-    <option name="y" value="-15" />
+    <option name="x" value="416" />
+    <option name="y" value="-17" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -235,7 +231,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Personal/e-cv-backup-livesite" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -281,7 +277,10 @@
       <workItem from="1560241141727" duration="6000" />
       <workItem from="1560242569786" duration="10055000" />
       <workItem from="1560323559579" duration="473000" />
-      <workItem from="1560335245232" duration="72000" />
+      <workItem from="1560335245232" duration="1326000" />
+      <workItem from="1560494269251" duration="9292000" />
+      <workItem from="1560510217901" duration="1962000" />
+      <workItem from="1560779221897" duration="3595000" />
     </task>
     <task id="LOCAL-00001" summary="lots of changes and new additions">
       <created>1558017438547</created>
@@ -311,17 +310,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559833754961</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changes on backend coding with Simon">
+      <created>1560335362767</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560335362767</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84954000" />
+    <option name="totallyTimeSpent" value="101057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1098081" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1130064" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -350,7 +356,8 @@
     <MESSAGE value="new additions on styling" />
     <MESSAGE value="styling changes and javascript added" />
     <MESSAGE value="styling changes and javascript added phase 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling changes and javascript added phase 2" />
+    <MESSAGE value="changes on backend coding with Simon" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes on backend coding with Simon" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assets/icon_close.svg" />
@@ -372,13 +379,11 @@
     <entry file="file://$PROJECT_DIR$/options.js" />
     <entry file="file://$PROJECT_DIR$/pages/email-varification.html" />
     <entry file="file://$PROJECT_DIR$/pages/password-forgot.html" />
-    <entry file="file://$PROJECT_DIR$/js/reset.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/login.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        <state relative-caret-position="816">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
@@ -389,34 +394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/neuer-termin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/termin-aendern.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13515">
-          <caret line="795" column="1" selection-start-line="795" selection-start-column="1" selection-end-line="795" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/menue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="4" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#svg#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="440">
+          <caret line="103" column="17" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -427,10 +408,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/login.html">
+    <entry file="file://$PROJECT_DIR$/js/getqueryparameters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/neuer-termin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/termin-aendern.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="62" lean-forward="true" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/menue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#svg#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

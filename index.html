@@ -2,146 +2,57 @@
 
 <html lang="de">
 <head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
     <title>Terminverwaltung mit C</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="pages/login.html">Login</a></li>
-        <li><a href="pages/menue.html">Menue</a></li>
-        <li><a href="pages/neuer-termin.html">Neuer Termin</a></li>
-        <li><a href="pages/termin-aendern.html">Termin Bearbeiten</a></li>
+<nav class="navigation terakutta">
+    <ul class="nav-ul">
+        <li class="nav-ul-li katastophe"><a href="pages/menue.html">Menue</a></li>
+        <li class="nav-ul-li katastophe"><a href="pages/neuer-termin.html">Neuer Termin</a></li>
+        <li class="nav-ul-li katastophe"><a href="pages/termin-aendern.html">Termin Bearbeiten</a></li>
     </ul>
 </nav>
 
 <section class="main">
-    <div class="container-login">
-        <h1 class="title">Terminverwaltung - LOGIN</h1>
-        <div class="wrapper">
-            Username
-            <input class="name" type="text" placeholder="Username" required>
-            </br>
-            Passwort
-            <input class="password" type="password" placeholder="Kennwort" required>
-            </br>
-            <span class="forgot">*Username/Password forgotten</span>
-            </br>
-            <div class="login-button">
-                <a href="#" class="click">Login</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-menue">
-        <h1 class="title">Terminverwaltung - MENUE</h1>
-        <div class="wrapper">
-            <p class="username"><< Sie sind angemeldet als: USERXY >></p>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-b-160 p-t-50">
+                <form name="login-form" class="login100-form validate-form" action="/cgi-app/cgi-bin/cgi-login.cgi"
+                      METHOD="POST">
+					<span class="login100-form-title p-b-43">
+						Melden Sie bitte hier
+					</span>
 
-            <button class="new-termin">Neuer Termin</button>
-            </br>
-            </br>
-            <button class="new-termin">Terminliste</button>
-            </br>
-            </br>
-            <button class="new-termin">Passwort aendern</button>
-            </br>
-            </br>
-            <div class="close-wrapper">
-                <a class="close-button" href="#">
-                    <img class="logout" src="assets/shut-down.svg">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container-termin-liste">
-        <h1 class="title">Terminverwaltung - Neuer Termin</h1>
-        <div class="wrapper">
-            <p class="username"><< Sie sind angemeldet als: USERXY >></p>
+                    <div class="wrap-input100 rs1 validate-input" data-validate="Username is required">
+                        <input class="input100 input-left textinput" type="text" name="username" size="25"
+                               maxlength="25">
+                        <span class="label-input100">Username</span>
+                    </div>
 
-            <div class="table">
-                <table class="list-table">
-                    <tr class="row">
-                        <th class="left">Datum</th>
-                        <th class="middle">Art</th>
-                        <th class="right">Bearbeiten</th>
-                    </tr>
-                    <tr class="row">
-                        <td class="left">19.05.2019 14.00 Uhr</td>
-                        <td class="middle">Meeting C++-Team</td>
-                        <td class="right">
-                            <a class="list-edit" href="#">
-                                <img class="edit-button" src="assets/edit_icon.png">
-                            </a>
-                            <a class="list-delete" href="#">
-                                <img class="delete-button" src="assets/delete_icon.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="row">
-                        <td class="left">26.06.2019 12.30 Uhr</td>
-                        <td class="middle">Mittagessen mit Kunde M.</td>
-                        <td class="right">
-                            <a class="list-edit" href="#">
-                                <img class="edit-button" src="assets/edit_icon.png">
-                            </a>
-                            <a class="list-delete" href="#">
-                                <img class="delete-button" src="assets/delete_icon.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="left">05.07.2019 11.00 Uhr</td>
-                        <td class="middle">Uebergabe Projekt X</td>
-                        <td class="right">
-                            <a class="list-edit" href="#">
-                                <img class="edit-button" src="assets/edit_icon.png">
-                            </a>
-                            <a class="list-delete" href="#">
-                                <img class="delete-button" src="assets/delete_icon.png">
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="container-termin">
-        <h1 class="title">Terminverwaltung - Neuer Termin</h1>
-        <div class="wrapper">
-            <p class="username"><< Sie sind angemeldet als: USERXY >></p>
 
-            <div class="calender">
+                    <div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
+                        <input class="input100 input-right textinput" type="password" name="password" size="25"
+                               maxlength="25">
+                        <span class="label-input100">Password</span>
+                    </div>
 
-            </div>
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" title="Einloggen" name="SUBMIT" type="submit" value="submit">
+                            Einloggen
+                        </button>
+                    </div>
 
-            <div class="timetable">
-                <div class="time">
-                    <form class="editing" action="/action_page.php">
-                        <div class="birthday">
-                            <p>
-                                <label>Birthday:</label>
-                                <input type="date" name="bday" class="bday">
-                            </p>
-                        </div>
-                        <div class="zeit-type">
-                            <p>
-                                <label>Uhrzeit:</label>
-                                <input type="time" name="zeit" class="zeit">
-                            </p>
-                            <p class="type-label">
-                                <label>Art:</label>
-                                <textarea rows="6" cols="20" name="aufgabe" class="aufgabe"></textarea>
-                            </p>
-                        </div>
-                    </form>
-                </div>
-                <div class="detail"></div>
-            </div>
-
-            <div class="close-wrapper">
-                <input class="send-button" type="submit">
+                    <div class="text-center w-full p-t-23">
+                        <a href="pages/reset-password.html" class="txt1">
+                            * Kennwort Vergessen?
+                        </a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

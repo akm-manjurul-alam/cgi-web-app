@@ -8,12 +8,19 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script>
+        urlp = [];
+        u = location.search.replace("?", "").split("&").forEach(function (d) {
+            e = d.split("=");
+            urlp[e[0]] = e[1];
+        })
+    </script>
 </head>
 <body>
 
+
 <nav class="navigation">
     <ul class="nav-ul">
-        <li class="nav-ul-li"><a href="../pages/login.html">Login</a></li>
         <li class="nav-ul-li"><a href="../pages/menue.html">Menue</a></li>
         <li class="nav-ul-li"><a href="../pages/neuer-termin.html">Neuer Termin</a></li>
         <li class="nav-ul-li"><a href="../pages/termin-aendern.html">Termin Bearbeiten</a></li>
@@ -21,12 +28,14 @@
     <ul class="nav-ul-id" id="scope">
         <li class="nav-ul-li-id image">
             <img title="Sie sind Angemeldet" class="admin-image" src="../assets/admin.svg" height="40px">
-            <span class="admin-logged-info post_meta">Master</span>
+            <span class="admin-logged-info post_meta" id="logged-in-user">
+                <script>document.write(urlp["user"]);</script>
+            </span>
         </li>
     </ul>
 
-    <a class="close-button" href="#" title="Ausloggen">
-        <svg version="1.1" class="logout" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+    <a class="close-button" href="../" title="Ausloggen">
+        <svg version="1.1" class="logout" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="485.215px" height="485.215px" viewBox="0 0 485.215 485.215"
              style="enable-background:new 0 0 485.215 485.215;"
@@ -49,9 +58,9 @@
     <div class="container-menue" id="menue">
         <h1 class="title">Terminverwaltung - MENUE</h1>
         <div class="wrapper-menu">
-            <button class="new-termin" title="Neuer Termin">Neuer Termin</button>
-            <button class="new-termin">Terminliste</button>
-            <button class="new-termin">Passwort Ändern</button>
+            <a class="new-termin" href="../pages/neuer-termin.html">Terminliste</a>
+            <a class="new-termin" href="../pages/termin-aendern.html">Neuer Termin</a>
+            <a class="new-termin" href="../pages/reset-password.html">Passwort Ändern</a>
         </div>
     </div>
 </section>
